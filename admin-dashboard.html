@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KASMS | Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="portal-page">
+    <header class="portal-header">
+      <div class="container portal-topbar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <span class="brand-name">KASMS</span>
+            <small>Portal</small>
+          </div>
+        </div>
+        <div class="portal-actions">
+          <span>Admin</span>
+          <a href="login.html" class="btn btn-secondary small-btn">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="portal-main container">
+      <section class="dashboard-grid">
+        <aside class="sidebar-card">
+          <h3>Admin Menu</h3>
+          <ul>
+            <li>Students</li>
+            <li>Teachers</li>
+            <li>Results</li>
+            <li>Finance</li>
+          </ul>
+        </aside>
+
+        <div class="content-stack">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span>Total Students</span>
+              <strong>1,240</strong>
+            </div>
+            <div class="stat-card">
+              <span>Teachers</span>
+              <strong>86</strong>
+            </div>
+            <div class="stat-card">
+              <span>Active Courses</span>
+              <strong>18</strong>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow accent">Administration</p>
+                <h2>School overview</h2>
+              </div>
+            </div>
+
+            <div class="admin-summary">
+              <div>
+                <h4>Enrollment</h4>
+                <p>420 new admissions this term.</p>
+              </div>
+              <div>
+                <h4>Performance</h4>
+                <p>Average pass rate stands at 89%.</p>
+              </div>
+              <div>
+                <h4>Reports</h4>
+                <p>All department reports are up to date.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KASMS | Student Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="portal-page">
+    <header class="portal-header">
+      <div class="container portal-topbar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <span class="brand-name">KASMS</span>
+            <small>Portal</small>
+          </div>
+        </div>
+        <div class="portal-actions">
+          <span id="portalUser">Welcome</span>
+          <a href="login.html" class="btn btn-secondary small-btn">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="portal-main container">
+      <section class="portal-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow accent">Results</p>
+            <h2>Academic dashboard</h2>
+          </div>
+          <button id="toggleResultForm" class="btn btn-primary small-btn">
+            Add result
+          </button>
+        </div>
+
+        <div id="teacherFormWrap" class="teacher-form-wrap hidden">
+          <form id="teacherResultForm" class="teacher-form">
+            <div class="form-row">
+              <label>
+                Student name
+                <input
+                  type="text"
+                  id="studentName"
+                  placeholder="Enter student name"
+                  required
+                />
+              </label>
+              <label>
+                Course
+                <select id="studentCourse" required>
+                  <option value="Clinical Medicine">Clinical Medicine</option>
+                  <option value="Nursing">Nursing</option>
+                  <option value="Medical Laboratory Science">
+                    Medical Laboratory Science
+                  </option>
+                  <option value="Public Health">Public Health</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Score
+                <input
+                  type="number"
+                  id="studentScore"
+                  min="0"
+                  max="100"
+                  placeholder="Score"
+                  required
+                />
+              </label>
+              <label>
+                Grade
+                <select id="studentGrade">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="F">F</option>
+                </select>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Result</button>
+          </form>
+        </div>
+
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Score</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

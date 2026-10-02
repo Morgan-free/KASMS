@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KASMS | Student Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="portal-page">
+    <header class="portal-header">
+      <div class="container portal-topbar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <span class="brand-name">KASMS</span>
+            <small>Portal</small>
+          </div>
+        </div>
+        <div class="portal-actions">
+          <span id="studentNameTag">Student</span>
+          <a href="login.html" class="btn btn-secondary small-btn">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="portal-main container">
+      <section class="dashboard-grid">
+        <aside class="sidebar-card">
+          <h3>Student Menu</h3>
+          <ul>
+            <li>Profile</li>
+            <li>My Courses</li>
+            <li>Exam Results</li>
+            <li>Timetable</li>
+          </ul>
+        </aside>
+
+        <div class="content-stack">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span>CGPA</span>
+              <strong>3.8</strong>
+            </div>
+            <div class="stat-card">
+              <span>Courses</span>
+              <strong>5</strong>
+            </div>
+            <div class="stat-card">
+              <span>Attendance</span>
+              <strong>94%</strong>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow accent">Exam Results</p>
+                <h2>My academic records</h2>
+              </div>
+            </div>
+
+            <div class="results-table-wrap">
+              <table class="results-table">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Score</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Clinical Medicine</td>
+                    <td>92</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Nursing</td>
+                    <td>88</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Public Health</td>
+                    <td>80</td>
+                    <td>B</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
